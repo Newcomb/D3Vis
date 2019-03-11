@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Visualizations</title>
+  </head>
+  <body>
+    <h1>Snake Oil Superfoods</h1>
+    <a href="http://informationisbeautiful.net/visualizations/snake-oil-superfoods/"></a>
+    <h2>Interactions</h2
+    <p>The Snake Oil Superfoods data visualization has many features for interactivity.
+    Simply hovering over the data on the scatterplot will expand the circle and give you a little more information.
+  Then if you are interested, clicking on the expanded data circle will change its color and provide you with a short explanation of the specific uses of that superfood.
+Once at this point, the user can even click a link inside the already clicked circle to go look at official studies done on the superfood.
+All of this interaction could be done using the d3 from our reading.
+First, to make the circles expand based on mouse positioning, you could use .on('mouseover',function(){}) and add any changes to radius and extra text as well
+inside the function. To make the circles return back to normal, you could then use .on('mouseout',function(){}) and add the effects you wished for in the funciton as well.
+Additionally, to allow the user's click to change the color and add new text, you would use .on('click',function(){}) and place any changes to attributes and text inside the function.
+</p>
+<h2>Animations</h2>
+<p>At the bottom of the data visualization is a set of clickable buttons that will change the wasy the data is presented.
+When you click one the data is reloaded in an interesting way. The circles seem to grow onto the screen all at seperate tiems.
+This can be done by using transitions and delays. The transition for each data point could be set to 1000 which would provide
+each piece of data 1 second to form on the screen. Then adding a delay of 1000 would start the transition of the next data point
+1 second after that. This way each data point would not immediatly pop onto the screen at the same time.</p>
+  </body>
+</html>
