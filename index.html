@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Snake Oil Superfoods</h1>
-    <a href="http://informationisbeautiful.net/visualizations/snake-oil-superfoods/">Snake Oil Superfoods</a>
+    <a href="http://informationisbeautiful.net/visualizations/snake-oil-superfoods/">Click here to view data</a>
     <h2>Interactions</h2
     <p>The Snake Oil Superfoods data visualization has many features for interactivity.
     Simply hovering over the data on the scatterplot will expand the circle and give you a little more information.
@@ -20,8 +20,25 @@ Additionally, to allow the user's click to change the color and add new text, yo
 <h2>Animations</h2>
 <p>At the bottom of the data visualization is a set of clickable buttons that will change the wasy the data is presented.
 When you click one the data is reloaded in an interesting way. The circles seem to grow onto the screen all at seperate tiems.
-This can be done by using transitions and delays. The transition for each data point could be set to 1000 which would provide
+This can be done by using transition, duration and delay. The transition for each data point could be set with a duration of 1000 which would provide
 each piece of data 1 second to form on the screen. Then adding a delay of 1000 would start the transition of the next data point
 1 second after that. This way each data point would not immediatly pop onto the screen at the same time.</p>
+
+<h1>Gender Pay Gap</h1>
+<a href="https://informationisbeautiful.net/visualizations/gender-pay-gap/">Click here to view data</a>
+<h2>Interactions</h2>
+<p>One feature of the Gender Pay Gap data visualization is the tooltip that pops onto your screen when you hover over
+one of the data points. This tooltip displays the exact salary of the data point on the screen. I would have implemented this tooltip by
+ appending a title element to the element I want to display the data. Then using a funciton I would have chosen the data to display
+and placed it inside for return. Other interactions allow the user to style the data by choosing a way to sort the data.
+This can be done by using the .sort method and a function which returns your sorted data based on another method you used or
+a set of code you create to sort the data.
+</p>
+<h2>Animations</h2>
+<p>An animation used in the Gender Pay Gap data visualization would be when the data is first loading
+onto the screen and when you reload the data. This animation starts all of the content
+on the left side and slides it into position. Then the lines form between the data values for men and women.
+To create tis animation, I would use d3's transition method with a duration of about 1000 so that the data can
+slide over smoothly. </p>
   </body>
 </html>
